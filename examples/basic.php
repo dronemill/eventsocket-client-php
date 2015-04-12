@@ -39,5 +39,3 @@ while(true)
 {
 	$client->recv();
 }
-
-
