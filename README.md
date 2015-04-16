@@ -9,7 +9,7 @@ But.. if you're on dry land, then keep reading!
 Just add to your composer.json's require section!
 
   ```
-  '"dronemill/eventsocket-client": "dev-master"'
+  "dronemill/eventsocket-client": "dev-master"
   ```
 And then run a `composer update`
 
