@@ -11,19 +11,13 @@
 	"license": "MIT",
 	"require": {
 		"textalk/websocket": "1.0.*",
-		"dronemill/phphelpers": "dev-master"
+		"dronemill/phphelpers": "0.0.1"
 	},
 	"require-dev": {
 		"mockery/mockery": "0.9.1",
 		"league/factory-muffin": "3.0.*@dev",
 		"league/factory-muffin-faker": "~1.0-dev"
 	},
-	"repositories": [
-		{
-			"type": "vcs",
-			"url":  "git@github.com:dronemill/phphelpers.git"
-		}
-	],
 	"minimum-stability": "dev",
 	"autoload": {
 		"psr-4": {
