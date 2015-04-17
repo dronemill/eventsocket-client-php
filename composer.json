@@ -16,7 +16,7 @@
 	"repositories": [
 		{
             "type": "vcs",
-            "url": "https://github.com/dronemill/websocket-php"
+            "url": "https://github.com/dronemill/websocket-php.git"
         }
 	],
 	"require-dev": {
