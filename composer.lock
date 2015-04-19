@@ -4,11 +4,11 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "216bdc20f71ed9faada80284dc3dba91",
+    "hash": "53c2c10a9f23669636e0f72bf5d2f080",
     "packages": [
         {
             "name": "dronemill/phphelpers",
-            "version": "dev-master",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dronemill/phphelpers.git",
@@ -26,6 +26,7 @@
                     "DroneMill\\Helpers\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -35,24 +36,20 @@
                 "helpers",
                 "php"
             ],
-            "support": {
-                "source": "https://github.com/dronemill/phphelpers/tree/master",
-                "issues": "https://github.com/dronemill/phphelpers/issues"
-            },
             "time": "2015-03-17 02:43:18"
         },
         {
             "name": "textalk/websocket",
-            "version": "1.0.3",
+            "version": "dev-downstream",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Textalk/websocket-php.git",
-                "reference": "ba2e5f9ef7cf24d536d1c864ae74b2a9599b86eb"
+                "url": "https://github.com/dronemill/websocket-php.git",
+                "reference": "fe405d232045cb01a7a3f355d8baf5e722d7faaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Textalk/websocket-php/zipball/ba2e5f9ef7cf24d536d1c864ae74b2a9599b86eb",
-                "reference": "ba2e5f9ef7cf24d536d1c864ae74b2a9599b86eb",
+                "url": "https://api.github.com/repos/dronemill/websocket-php/zipball/fe405d232045cb01a7a3f355d8baf5e722d7faaa",
+                "reference": "fe405d232045cb01a7a3f355d8baf5e722d7faaa",
                 "shasum": ""
             },
             "require-dev": {
@@ -66,7 +63,6 @@
                     "WebSocket\\": "lib"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -77,7 +73,10 @@
                 }
             ],
             "description": "WebSocket client and server",
-            "time": "2015-04-11 05:45:54"
+            "support": {
+                "source": "https://github.com/dronemill/websocket-php/tree/downstream"
+            },
+            "time": "2015-04-17 18:25:18"
         }
     ],
     "packages-dev": [
@@ -317,7 +316,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dronemill/phphelpers": 20,
+        "textalk/websocket": 20,
         "league/factory-muffin": 20,
         "league/factory-muffin-faker": 20
     },
