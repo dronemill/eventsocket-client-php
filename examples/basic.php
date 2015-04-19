@@ -23,11 +23,11 @@ $client->suscribe('foo', function($m) use ($client) {
 
 $client->registerRequestHandler(function($m) use ($client) {
 	echo 'REQUEST: requestId:' . $m->RequestId . ' replyingTo:'. $m->ReplyClientId . PHP_EOL;
-	$client->reply($m->RequestId, $m->ReplyClientId, ['I_SEE_YOU' => (string) rand(99999,9999999)]);
+	$client->reply($m->RequestId, $m->ReplyClientId, ['I_SEE_YOU' => 'hello!']);
 });
 
 
-if ($options['requestClientId'])
+if (array_key_exists('requestClientId', $options))
 {
 	$client->request($options['requestClientId'], ['PEEK_ABOO' => 'hello'], function($m) use ($client) {
 		echo 'REPLY: requestId:' . $m->RequestId . ' payload:'. print_r($m->Payload, true) . PHP_EOL;
