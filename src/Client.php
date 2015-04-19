@@ -287,6 +287,11 @@ class Client {
 			throw new ClientException("Failed decoding json response from server");
 		}
 
+		if (empty($result))
+		{
+			throw new ClientException("Did not receive a valid client instance");
+		}
+
 		return $result;
 	}
 
