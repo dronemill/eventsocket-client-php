@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "53c2c10a9f23669636e0f72bf5d2f080",
+    "hash": "89f3c09c9271eeb43c54d95b152c77c1",
     "packages": [
         {
             "name": "dronemill/phphelpers",
@@ -40,16 +40,16 @@
         },
         {
             "name": "textalk/websocket",
-            "version": "dev-downstream",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dronemill/websocket-php.git",
-                "reference": "fe405d232045cb01a7a3f355d8baf5e722d7faaa"
+                "url": "https://github.com/Textalk/websocket-php.git",
+                "reference": "4a4cb3a2d6acbf61268f74eb6095585dda020208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dronemill/websocket-php/zipball/fe405d232045cb01a7a3f355d8baf5e722d7faaa",
-                "reference": "fe405d232045cb01a7a3f355d8baf5e722d7faaa",
+                "url": "https://api.github.com/repos/Textalk/websocket-php/zipball/4a4cb3a2d6acbf61268f74eb6095585dda020208",
+                "reference": "4a4cb3a2d6acbf61268f74eb6095585dda020208",
                 "shasum": ""
             },
             "require-dev": {
@@ -63,6 +63,7 @@
                     "WebSocket\\": "lib"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -73,10 +74,7 @@
                 }
             ],
             "description": "WebSocket client and server",
-            "support": {
-                "source": "https://github.com/dronemill/websocket-php/tree/downstream"
-            },
-            "time": "2015-04-17 18:25:18"
+            "time": "2015-04-24 10:07:25"
         }
     ],
     "packages-dev": [
@@ -316,7 +314,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "textalk/websocket": 20,
         "league/factory-muffin": 20,
         "league/factory-muffin-faker": 20
     },

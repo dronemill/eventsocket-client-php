@@ -10,15 +10,9 @@
 	],
 	"license": "MIT",
 	"require": {
-		"textalk/websocket": "dev-downstream",
+		"textalk/websocket": "1.1.0",
 		"dronemill/phphelpers": "0.0.1"
 	},
-	"repositories": [
-		{
-            "type": "vcs",
-            "url": "https://github.com/dronemill/websocket-php.git"
-        }
-	],
 	"require-dev": {
 		"mockery/mockery": "0.9.1",
 		"league/factory-muffin": "3.0.*@dev",
