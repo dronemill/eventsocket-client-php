@@ -205,6 +205,22 @@ class Client {
 		$this->send($m);
 	}
 
+	/**
+	 * Emit a given event
+	 *
+	 * @param   string  $event the event to event to
+	 * @param   Array   $payload the payload to send
+	 * @return  void
+	 */
+	public function emit($event, Array $payload)
+	{
+		$m = $this->bareMessage(static::MESSAGE_TYPE_STANDARD);
+		$m->Event = $event;
+		$m->Payload = $payload;
+
+		$this->send($m);
+	}
+
 
 	////////////////////////////
 	// BEGIN PRIVATE METHODS //
