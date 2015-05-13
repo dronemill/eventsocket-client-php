@@ -15,6 +15,7 @@ $client->registerBroadcastHandler(function($m) use ($client) {
 	echo 'BROADCAST: ' . $m->Payload->value . PHP_EOL;
 });
 
+$client->emit('foo', ['secretNumber' => rand(1000000,99999999)]);
 
 $client->suscribe('foo', function($m) use ($client) {
 	echo $m->Event . ': ' . $m->Payload->awesomeValue . PHP_EOL;
