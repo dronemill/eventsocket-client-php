@@ -21,12 +21,20 @@ $client->suscribe('foo', function($m) use ($client) {
 	echo $m->Event . ': ' . $m->Payload->awesomeValue . PHP_EOL;
 });
 
-
 $client->registerRequestHandler(function($m) use ($client) {
 	echo 'REQUEST: requestId:' . $m->RequestId . ' replyingTo:'. $m->ReplyClientId . PHP_EOL;
 	$client->reply($m->RequestId, $m->ReplyClientId, ['I_SEE_YOU' => 'hello!']);
 });
 
+$client->request('clientIDThatNoExist', ['ClientDoesNotExist' => 'I Know'], function($m) use ($client) {
+	if ($m->Error === null) {
+		echo "Should have received error...\n";
+	}
+
+	if ($m->Error->Type !== Client::ERROR_REQUEST_CLIENT_NO_EXIST) {
+		echo 'Received incorrect Errortype (expected: ' . Client::ERROR_REQUEST_CLIENT_NO_EXIST . ")\n";
+	}
+});
 
 if (array_key_exists('requestClientId', $options))
 {
@@ -34,7 +42,6 @@ if (array_key_exists('requestClientId', $options))
 		echo 'REPLY: requestId:' . $m->RequestId . ' payload:'. print_r($m->Payload, true) . PHP_EOL;
 	});
 }
-
 
 while(true)
 {

@@ -18,6 +18,8 @@ class Client {
 	const MESSAGE_TYPE_SUSCRIBE = 5;
 	const MESSAGE_TYPE_UNSUSCRIBE = 6;
 
+	const ERROR_REQUEST_CLIENT_NO_EXIST = 'ErrorRequestClientNoExist';
+
 
 	/**
 	 * the Eventsocket server url
@@ -371,6 +373,7 @@ class Client {
 			'ReplyClientId' => null,
 			'RequestClientId' => null,
 			'Payload' => [],
+			'Error' => null,
 		];
 
 		return (object) $m;
