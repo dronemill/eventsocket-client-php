@@ -19,6 +19,7 @@ class Client {
 	const MESSAGE_TYPE_UNSUSCRIBE = 6;
 
 	const ERROR_REQUEST_CLIENT_NO_EXIST = 'ErrorRequestClientNoExist';
+	const ERROR_REQUEST_CLIENT_NOT_CONNECTED = 'ErrorRequestClientNotConnected';
 
 
 	/**
