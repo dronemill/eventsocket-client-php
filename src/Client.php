@@ -323,7 +323,7 @@ class Client {
 	{
 		$wsUrl = sprintf('ws://%s/v1/clients/%s/ws', $this->serverUrl, $this->getId());
 
-		$this->ws = new WebsocketClient($wsUrl);
+		$this->ws = new WebsocketClient($wsUrl, ['timeout' => 30]);
 		$this->ws->setTimeout(30);
 	}
 
