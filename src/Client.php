@@ -123,7 +123,6 @@ class Client {
 		// is the message is empty?
 		if (empty($message))
 		{
-			echo 'Did not receive anything from socket...' . PHP_EOL;
 			return;
 		}
 
